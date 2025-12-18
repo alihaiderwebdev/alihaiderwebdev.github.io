@@ -4,7 +4,7 @@
   color: var(--text-primary);
   padding: 3rem 0 1.5rem;
   position: relative;
-  border-top: 1px solid rgba(0, 200, 150, 0.1);
+  border-top: 1px solid rgba(19, 23, 22, 0.1);
 }
 
 .container {
