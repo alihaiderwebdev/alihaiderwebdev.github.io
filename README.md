@@ -1,8 +1,20 @@
-# Ali Haider's Portfolio
+# Ali Haider - Professional Portfolio
 
-A modern and responsive frontend developer portfolio built with **React.js**, showcasing projects, skills, and contact information.
+A clean, modern, and lightweight React-based portfolio website showcasing frontend development skills and projects.
 
-## Demo
+## 🌟 Features
+
+- **Professional Design**: Clean, minimal, and modern UI
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop
+- **Lightweight**: No heavy libraries or excessive animations
+- **Component-based**: Reusable React components with clean architecture
+- **SEO Friendly**: Optimized for search engines
+- **Fast Loading**: Minimal dependencies and optimized performance
+- **Easy to Maintain**: Well-organized code structure
+
+## 🚀 Live Demo
+
+[View Portfolio](https://alihaiderwebdev.github.io)
 
 Check out the live site here:  
 [https://alihaiderwebdev.github.io](https://alihaiderwebdev.github.io)

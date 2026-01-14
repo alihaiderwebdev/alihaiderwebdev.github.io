@@ -1,50 +1,27 @@
-import React, { lazy, Suspense } from 'react';
-import Header from './Components/Header/header';
-import Footer from './Components/Footer/footer';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import './global.css';
+import React from 'react';
+import Header from './Components/Header/index.jsx';
+import Hero from './Components/Hero/index.jsx';
+import About from './Components/About/index.jsx';
+import Skills from './Components/Skills/index.jsx';
+import Projects from './Components/Projects/index.jsx';
+import Contact from './Components/Contact/index.jsx';
+import Footer from './Components/Footer/index.jsx';
+import './styles/global.css';
 
-// Lazy load pages
-const Home = lazy(() => import('./Components/Pages/Home/home'));
-const About = lazy(() => import('./Components/Pages/About/about'));
-const Skills = lazy(() => import('./Components/Pages/Skills/skills'));
-const Projects = lazy(() => import('./Components/Pages/Projects/projects'));
-const Contact = lazy(() => import('./Components/Pages/Contact/contact'));
-
-// Simple loading component
-const Loading = () => <div className="loading">Loading...</div>;
-
-// Scroll to top wrapper
-const ScrollToTop = ({ children }) => {
-  const location = useLocation();
-  
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
-  return children;
-};
-
-const App = () => {
+function App() {
   return (
-    <div className="app-wrapper">
+    <div className="App">
       <Header />
-      <main className="content-wrapper">
-        <ScrollToTop>
-          <Suspense fallback={<Loading />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Suspense>
-        </ScrollToTop>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
       </main>
       <Footer />
     </div>
   );
-};
+}
 
 export default App;
